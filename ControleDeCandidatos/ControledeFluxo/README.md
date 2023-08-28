@@ -1,0 +1,1 @@
+Nesse arquivo do repositorio, voce ira encontrar um codigo que funciona para um sistema de validacao de processo seletivo. Nele, ha varias funcoes criadas para diferentes funcionalidades. Desde a pretencao salarial de cada candidato relacionada com a base salarial disposta pela empresa, ate a quantidade de vezes que o RH tentou ligar para cada candidato.
