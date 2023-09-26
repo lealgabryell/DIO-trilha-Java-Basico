@@ -10,7 +10,15 @@ public class Navegador extends Aparelho {
     public void abrirNavegador(){
         System.out.println("Abrindo navegador...");
     }
-    public void exibirPagina(String nomeDaPagina){
+    public void exibirPagina(){
         System.out.println("A pagina " + getNomeDaPagina() + " esta sendo exibida!");
+    }
+
+    public void adicionarNovaPagina(){
+        System.out.println("Nova aba adionada...");
+    }
+
+    public void atualizarPagina(){
+        System.out.println("Atualizando pagina...");
     }
 }

@@ -68,17 +68,22 @@ public class Aparelho {
                 navegador.abrirNavegador();
                 System.out.println("Digite o nome da pagina que sera exibida: ");
                 String nomeDaPagina = sc.nextLine();
-                navegador.exibirPagina(nomeDaPagina);
-                System.out.println("Deseja adicionar uma nova pagina?");
-
-                //TODO: continuar daqui...
-
-
+                navegador.setNomeDaPagina(nomeDaPagina);
+                navegador.exibirPagina();
+                System.out.println("1- Adicionar pagina\n2-Atualizar pagina");
+                resposta = sc.nextLine();
+                if (resposta.equalsIgnoreCase("1")||resposta.equalsIgnoreCase("adicionar")) {
+                    navegador.adicionarNovaPagina();
+                } else if (resposta.equalsIgnoreCase("2")||resposta.equalsIgnoreCase("atualizar")) {
+                   navegador.atualizarPagina();
+                }
                 break;
+
             case 4: // se a escolha for 4
                 System.out.println(modelo + ", tela de " + tela + " polegadas, camera de " + camera
                         + " megapixels e processador " + processador);
                 break;
+
             case 5:// se a escolha for 5
                 System.out.println("Desligando o aparelho...");
                 System.exit(0);
